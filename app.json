@@ -22,6 +22,10 @@
     "OVERRIDE_FROM_USER": {
       "description":"Value to use for From header in outbound calls to PSTN, original From callerID sent by Retell will be added to a Diversion header, use when SIPGATE is your carrier ",
       "required" : false
+    },
+    "REFER_METHOD": {
+      "description":"How to handle a SIP REFER from Retel, either REFER on to the Carrier (default), or DIAL to initiate a new outbound call via the PSTN TRUNK and bridge them.",
+      "required" : false
     }
   }
 }
