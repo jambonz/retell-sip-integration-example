@@ -10,7 +10,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@jambonz/node-client-ws": "^0.1.57",
+    "@jambonz/node-client-ws": "^0.2.3",
     "express": "^4.21.1",
     "google-libphonenumber": "^3.2.40",
     "pino": "^9.5.0",

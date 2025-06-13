@@ -17,6 +17,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use('/', webhooks);
 
+// Set up environment routes
+app.use('/', require('./lib/env-vars'));
+
 require('./lib/routes')({logger, makeService});
 
 server.listen(port, () => {
