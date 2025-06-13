@@ -1,6 +1,6 @@
 {
   "name": "retell-sip-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "jambonz websocket application",
   "main": "app.js",
   "scripts": {
@@ -10,11 +10,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@jambonz/node-client-ws": "^0.1.57",
+    "@jambonz/node-client-ws": "^0.2.3",
     "express": "^4.21.1",
     "google-libphonenumber": "^3.2.40",
-    "pino": "^9.5.0",
-    "undici": "^6.20.1"
+    "pino": "^9.5.0"
   },
   "devDependencies": {
     "eslint-plugin-promise": "^6.2.0"

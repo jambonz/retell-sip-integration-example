@@ -1,0 +1,29 @@
+{
+  "/retell": {
+    "RETELL_TRUNK_NAME": {
+      "description": "The name of the Carrier you configured in jambonz towards Retell",
+      "type": "string",
+      "required" : true
+    },
+      "RETELL_SIP_CLIENT_USERNAME": {
+      "description": "The name of the Client you configured in jambonz for Retell",
+      "type": "string",
+      "required" : true
+    },
+      "PSTN_TRUNK_NAME": {
+      "description": "The name of the Carrier you configured in jambonz towards your SIP service provider",
+      "type": "string",
+      "required" : true
+    },
+    "DEFAULT_COUNTRY": {
+      "description": "The 2 *CHARACTER* ISO-3166 Country Code for your phone number eg US, GB, ES, see https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2 for values",
+      "type": "string",
+      "enum" : ["", "AF","AL","DZ","AS","AD","AO","AI","AQ","AG","AR","AM","AW","AU","AT","AZ","BS","BH","BD","BB","BY","BE","BZ","BJ","BM","BT","BO","BA","BW","BV","BR","IO","BN","BG","BF","BI","KH","CM","CA","CV","KY","CF","TD","CL","CN","CX","CC","CO","KM","CG","CD","CK","CR","CI","HR","CU","CY","CZ","DK","DJ","DM","DO","EC","EG","SV","GQ","ER","EE","ET","FK","FO","FJ","FI","FR","GF","PF","TF","GA","GM","GE","DE","GH","GI","GR","GL","GD","GP","GU","GT","GN","GW","GY","HT","HM","VA","HN","HK","HU","IS","IN","ID","IR","IQ","IE","IL","IT","JM","JP","JO","KZ","KE","KI","KP","KR","KW","KG","LA","LV","LB","LS","LR","LY","LI","LT","LU","MO","MG","MW","MY","MV","ML","MT","MH","MQ","MR","MU","YT","MX","FM","MD","MC","MN","MS","MA","MZ","MM","NA","NR","NP","NL","NC","NZ","NI","NE","NG","NU","NF","MP","MK","NO","OM","PK","PW","PS","PA","PG","PY","PE","PH","PN","PL","PT","PR","QA","RE","RO","RU","RW","SH","KN","LC","PM","VC","WS","SM","ST","SA","SN","SC","SL","SG","SK","SI","SB","SO","ZA","GS","ES","LK","SD","SR","SJ","SZ","SE","CH","SY","TW","TJ","TZ","TH","TL","TG","TK","TO","TT","TN","TR","TM","TC","TV","UG","UA","AE","GB","US","UM","UY","UZ","VU","VE","VN","VG","VI","WF","EH","YE","ZM","ZW","AX","BQ","CW","GG","IM","JE","ME","BL","MF","RS","SX","SS","XK"],
+      "required" : false
+    },
+      "OVERRIDE_FROM_USER": {
+      "description": "Value to use for From header in outbound calls to PSTN, original From callerID sent by Retell will be added to a Diversion header, use when SIPGATE is your carrier",
+      "type": "string",
+      "required" : false
+    }
+  }}
